@@ -36,8 +36,8 @@ class ConfigurationTest extends TestCase
 
     public function testAddDriverSettings()
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('stash');
+        $treeBuilder = new TreeBuilder('stash');
+        $rootNode = $treeBuilder->getRootNode();
         $configuration = new Configuration();
         $configuration->addDriverSettings('Memcache', $rootNode->children());
         $memcacheNode = $rootNode->getNode('Memcache');
@@ -48,8 +48,8 @@ class ConfigurationTest extends TestCase
             'Config generator makes Memcache nodes when requested'
         );
 
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('stash');
+        $treeBuilder = new TreeBuilder('stash');
+        $rootNode = $treeBuilder->getRootNode();
         $configuration = new Configuration();
         $configuration->addDriverSettings('Redis', $rootNode->children());
         $memcacheNode = $rootNode->getNode('Redis');
