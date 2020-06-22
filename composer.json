@@ -25,7 +25,7 @@
         }
     ],
     "require": {
-        "php": "^7.0",
+        "php": "^7.3",
         "tedivm/stash": "^0.15",
         "symfony/config": "^5.0",
         "symfony/http-kernel": "^5.0",
@@ -35,7 +35,7 @@
         "vendor-dir": "vendor",
         "sort-packages": true,
         "platform": {
-            "php": "7.0.8"
+            "php": "7.3.8"
         }
     },
     "require-dev": {
