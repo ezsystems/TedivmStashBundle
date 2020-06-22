@@ -1,7 +1,10 @@
 {
-    "name": "tedivm/stash-bundle",
+    "name": "ezsystems/stash-bundle",
     "type": "symfony-bundle",
     "description": "Incorporates the Stash caching library into Symfony.",
+    "replace": {
+        "tedivm/stash-bundle": "self.version"
+    },
     "keywords": [
         "apc",
         "cache",
